@@ -1,0 +1,9 @@
+let txt = document.getElementById('txt');
+let distancia = Number.parseFloat(prompt("Digite uma distância em metros: "));
+let km = distancia/1000;
+let hm = distancia/100;
+let dam = distancia/10;
+let dm = distancia*10;
+let cm = distancia*100;
+let mm = distancia*1000;
+txt.innerHTML = (`A distância em metros foi: ${distancia} <br> <br> Ela corresponde á: <br> <br> ${km} Quilômetros <br> ${hm} Hectômetros <br> ${dam} Decâmetros <br> ${dm} Decímetros <br> ${cm} Centímetros <br> ${mm} Milímetros`)
