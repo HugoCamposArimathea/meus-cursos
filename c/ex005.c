@@ -46,7 +46,11 @@ int main(){
         break;
     case 3:
         divisao();
-        printf("\nA resposta é: %d\n", res);
+        if(num2 == 0){
+            printf("Divisão por zero!\n");
+        } else {
+            printf("\nA resposta é: %d\n", res);
+        }
         break;
     case 4: 
         multi();
